@@ -61,7 +61,7 @@ def wait(duration):
     print ""
 
 # Ask question one
-question1 = ask_question("what do you want to do first?", ["get your space suit", "go to the mechanic"])
+question1 = ask_question("what do you want to do first?", ["get your spacesuit", "go to the mechanic"])
 
 # Take the question one answer and print a different response for each option
 if question1 == "1":
@@ -95,6 +95,16 @@ elif question3 == "2":
     print BACON
     sys.exit()
 
-wait(15)
+wait(20)
 
 print "there you go theres your ship!"
+question4 = ask_question("what do you want to do next?", ["get your spacesuit", "go to your spaceship"])
+
+if question4 == "1":
+    print "you put your spacesuit on and went in to your spaceship"
+
+elif question4 == "2":
+    print "your spaceship exploded!"
+    print DEAD_PIG
+    sys.exit()
+
