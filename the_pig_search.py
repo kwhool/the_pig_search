@@ -39,7 +39,7 @@ print '''
 print "welcome to the pig search!"
 print "your name is piggie the astronaut pig."
 print "your friends have been kidnapped by gaint bad guy pig."
-print "he broke your ship and left to planet piglandius."
+print "he broke your spaceship and left to planet piglandius."
 print "you will have to get them back!"
 print ""
 
@@ -104,7 +104,28 @@ if question4 == "1":
     print "you put your spacesuit on and went in to your spaceship"
 
 elif question4 == "2":
-    print "your spaceship exploded!"
+    print "your spaceship exploded by accidentally dropping a bomb."
     print DEAD_PIG
     sys.exit()
 
+print "gr bho! what was that noise! wait! I need GAS!"
+question5 = ask_question("what road do need to go in to the gas station?", [" the north road","the south road"])
+
+if question5 == "1":
+    print "yay we're at the gas station!"
+
+elif question5 == "2":
+    print "you walked into a spikey bush"
+    print DEAD_PIG
+    sys.exit()
+
+print "your ship has been filled with gas.yay now we can go in space!you got into your ship."
+question6 = ask_question("what button should you press?", ["the red button", "the blue button"])
+
+if question6 == "1":
+    print "you pressed the selfdistruct button"
+    print BACON
+    sys.exit()
+
+elif question6 == "2":
+    print "you pressed the right button. you flew up and landed on the planet pig."
